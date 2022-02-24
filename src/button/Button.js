@@ -3,7 +3,10 @@ import React from "react";
 const Button = ( { buttonText, disabled } ) => {
 
     function handleClick() {
-        console.log(`You pressed ${buttonText}.`)
+        // document.querySelector('.flip-card').addEventListener('click', function () {
+        document.querySelector('.flip-card-inner').classList.toggle('flipped');
+        // });
+        // console.log(`You flipped me!`)
     }
 
     return (
