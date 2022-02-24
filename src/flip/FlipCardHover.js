@@ -1,24 +1,13 @@
 import React from "react";
-import './FlipCard';
-import './FlipCardClick.css';
 import FlipCard from "./FlipCard";
+import './FlipCardHover.css'
 
-const FlipCardClick = ({
+const FlipCardHover = ({
                            title_front, text_front, image_front, altText_front,
                            title_back, text_back, image_back, altText_back
-                           // button_front_text, button_front_disabled,
-                           // button_back_text, button_back_disabled
                        }) => {
-
-    function handleClick() {
-        // document.querySelector('.flip-card').addEventListener('click', function () {
-        document.querySelector('.flip-card-click .flip-card-inner').classList.toggle('flipped');
-        // });
-        // console.log(`You flipped me!`)
-    }
-
     return (
-        <div className="flip-card-click" onClick={ handleClick }>
+        <div className="flip-card-hover">
             <FlipCard
                 title_front={title_front}
                 text_front={text_front}
@@ -33,4 +22,4 @@ const FlipCardClick = ({
     )
 }
 
-export default FlipCardClick;
+export default FlipCardHover;

@@ -1,27 +1,31 @@
 import React from "react";
-import Button from "../button/Button";
-import '../button/Button.css';
+import './FlipCard.css';
+import './FlipCardButton.css';
+import FlipCard from "./FlipCard.js";
 
-const FlipCardClick = ({buttonTextFront, buttonTextBack, disabled}) => {
+const FlipCardClick = ({
+                           title_front, text_front, image_front, altText_front,
+                           title_back, text_back, image_back, altText_back,
+                           button_front_text, button_front_disabled,
+                           button_back_text, button_back_disabled
+                       }) => {
 
     return (
-        <div className="flip-card">
-            <div className="flip-card-inner">
-                <div className="flip-card-front">
-                    <p>This is the front side of my click card</p>
-                    <Button
-                        buttonText={buttonTextFront}
-                    />
-                </div>
-                <div className="flip-card-back">
-                    <h1>Jane Doe</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
-                    <Button
-                        buttonText={buttonTextBack}
-                    />
-                </div>
-            </div>
+        <div className="flip-card-button">
+            <FlipCard
+                title_front={title_front}
+                text_front={text_front}
+                title_back={title_back}
+                text_back={text_back}
+                image_front={image_front}
+                altText_front={altText_front}
+                image_back={image_back}
+                altText_back={altText_back}
+                button_front_text={button_front_text}
+                button_back_text={button_back_text}
+                button_front_disabled={button_front_disabled}
+                button_back_disabled={button_back_disabled}
+            />
         </div>
     )
 }

@@ -1,21 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-// import './FlipCard.css'
-// import './FlipCardClick.css'
-import './flip/FlipCardButton.css'
-// import FlipCard from "./FlipCard";
-// import FlipCardClick from "./FlipCardClick";
+// import './flip/FlipCardHover.css';
+// import './flip/FlipCardClick.css';
+// import './flip/FlipCardButton.css';
+import FlipCardHover from "./flip/FlipCardHover.js";
+import FlipCardClick from "./flip/FlipCardClick.js";
 import FlipCardButton from "./flip/FlipCardButton.js";
 
 function App() {
     return (
         <div className="App">
-           {/*<FlipCard />*/}
-           {/*<FlipCardClick />*/}
-           <FlipCardButton
-               buttonTextFront={"Flip me"}
-               buttonTextBack={"Flip me again"}
-           />
+
+            <FlipCardHover
+                text_front={["this is the front text"]}
+                title_back={"John Doe"}
+                text_back={["Architecht", "Programmer"]}
+            />
+
+            <FlipCardClick
+                text_front={["this is the front text - click"]}
+                title_back={"John Doe"}
+                text_back={["Architecht", "Programmer"]}
+            />
+
+            {/*<FlipCardButton*/}
+            {/*    text_front={["this is the front text"]}*/}
+            {/*    title_back={"John Doe"}*/}
+            {/*    text_back={["Architecht", "Programmer"]}*/}
+            {/*    button_front_text={"Flip front"}*/}
+            {/*    button_back_text={"Flip back"}*/}
+            {/*    // button_back_disabled={true}*/}
+            {/*/>*/}
         </div>
     );
 }
