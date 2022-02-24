@@ -5,7 +5,7 @@ import './App.css';
 import './flip/FlipCardButton.css'
 // import FlipCard from "./FlipCard";
 // import FlipCardClick from "./FlipCardClick";
-import FlipCardButton from "./flip/FlipCardButton";
+import FlipCardButton from "./flip/FlipCardButton.js";
 
 function App() {
     return (
