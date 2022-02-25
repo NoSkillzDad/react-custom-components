@@ -1,7 +1,7 @@
 import React from "react";
-import './Button.css';
+import './FButton.css';
 
-const Button = ( { buttonText, disabled, id } ) => {
+const FButton = ({ buttonText, disabled, id } ) => {
 
     id = "." + id;
 
@@ -21,4 +21,4 @@ const Button = ( { buttonText, disabled, id } ) => {
     )
 }
 
-export default Button;
+export default FButton;

@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../button/Button.js";
-import '../button/Button.css'
+import FButton from "../button/FButton.js";
+import '../button/FButton.css'
 import './FlipCard.css';
 
 const FlipCard = ({   id,
@@ -14,7 +14,7 @@ const FlipCard = ({   id,
         // console.log({id});
 
         if (button_text) {
-            return <Button
+            return <FButton
                 buttonText={button_text}
                 disabled={disabled}
                 id={id}
