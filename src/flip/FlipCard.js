@@ -1,6 +1,6 @@
 import React from "react";
-import FButton from "../button/FButton.js";
-import '../button/FButton.css'
+import FButton from "./button/FButton.js";
+import './button/FButton.css'
 import './FlipCard.css';
 
 const FlipCard = ({   id,
