@@ -2,13 +2,14 @@ import React from "react";
 import FlipCard from "./FlipCard";
 import './FlipCardHover.css'
 
-const FlipCardHover = ({
+const FlipCardHover = ({   id,
                            title_front, text_front, image_front, altText_front,
                            title_back, text_back, image_back, altText_back
                        }) => {
     return (
         <div className="flip-card-hover">
             <FlipCard
+                id={id}
                 title_front={title_front}
                 text_front={text_front}
                 title_back={title_back}

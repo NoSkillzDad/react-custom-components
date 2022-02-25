@@ -3,23 +3,30 @@ import './FlipCard';
 import './FlipCardClick.css';
 import FlipCard from "./FlipCard";
 
-const FlipCardClick = ({
+const FlipCardClick = ({   id,
                            title_front, text_front, image_front, altText_front,
                            title_back, text_back, image_back, altText_back
                            // button_front_text, button_front_disabled,
                            // button_back_text, button_back_disabled
                        }) => {
 
+    const newId = id + ` flip-card-click`;
+
     function handleClick() {
+
+        let nId = "." + id;
+
         // document.querySelector('.flip-card').addEventListener('click', function () {
-        document.querySelector('.flip-card-click .flip-card-inner').classList.toggle('flipped');
+        // document.querySelector('.flip-card-click .flip-card-inner').classList.toggle('flipped');
+        document.querySelector(`${nId} .flip-card-inner`).classList.toggle('flipped');
         // });
         // console.log(`You flipped me!`)
     }
 
     return (
-        <div className="flip-card-click" onClick={ handleClick }>
+        <div className={newId} onClick={ handleClick }>
             <FlipCard
+                id={id}
                 title_front={title_front}
                 text_front={text_front}
                 title_back={title_back}

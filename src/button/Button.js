@@ -1,13 +1,15 @@
 import React from "react";
 import './Button.css';
 
-const Button = ( { buttonText, disabled, class_flip } ) => {
+const Button = ( { buttonText, disabled, id } ) => {
+
+    id = "." + id;
 
     function handleClick() {
         // document.querySelector('.flip-card-button').addEventListener('click', function () {
-        document.querySelector('.flip-card-button .flip-card-inner').classList.toggle('flipped');
+        // document.querySelector(`.flip-card-button .flip-card-inner` ).classList.toggle('flipped');
+        document.querySelector(`${id} .flip-card-inner`).classList.toggle('flipped');
         // });
-        // console.log(`You flipped me!`)
     }
 
     return (
