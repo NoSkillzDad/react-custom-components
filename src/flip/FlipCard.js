@@ -25,7 +25,7 @@ const FlipCard = ({   id,
     const cardContent = (image, altText, title, text, button_text, disabled, id) => {
         if (image) {
             return (<>
-                    <img src={image} alt={altText}/>
+                    <img src={image} alt={altText} width={"100%"}/>
                     {incButton(button_text, id, disabled)}
                 </>
             )
