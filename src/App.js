@@ -1,15 +1,9 @@
 import './App.css';
-// import './flip/FlipCardHover.css';
-// import './flip/FlipCardClick.css';
-// import './flip/FlipCardButton.css';
-import './flip/FlipCard.css';
+// import './flip/FlipCard.css';
 import './slide/slide-styles.css';
 import FlipCardHover from "./flip/FlipCardHover.js";
 import FlipCardClick from "./flip/FlipCardClick.js";
 import FlipCardButton from "./flip/FlipCardButton.js";
-import FlipCard from "./flip/FlipCard";
-import ChildrenTest from "./custom/ChildrenTest";
-import FlipCardTest from "./flip/FlipCardTest";
 
 function App() {
     return (
@@ -23,21 +17,8 @@ function App() {
                     text_back={["Architecht", "Programmer"]}
                 />
 
-                <FlipCardHover
-                    id={"fc10"}
-                    text_front={["this is the front text"]}
-                    title_back={"John Doe"}
-                    text_back={["Architecht", "Programmer"]}
-                />
-
                 <FlipCardClick
                     id={"fc1"}
-                    text_front={["this is the front text - click"]}
-                    title_back={"John Doe"}
-                    text_back={["Architecht", "Programmer"]}
-                />
-                <FlipCardClick
-                    id={"fc2"}
                     text_front={["this is the front text - click"]}
                     title_back={"John Doe"}
                     text_back={["Architecht", "Programmer"]}
@@ -53,23 +34,15 @@ function App() {
                     // button_back_disabled={true}
                 />
 
-                <FlipCardButton
-                    id={"fc4"}
-                    text_front={["this is the front text"]}
-                    title_back={"John Doe"}
-                    text_back={["Architecht", "Programmer"]}
-                    button_front_text={"Flip front"}
-                    button_back_text={"Flip back"}
-                    // button_back_disabled={true}
-                />
                 <FlipCardHover
                     id={"fc11"}
-                    title_front={"WHY!!!!"}
-                    text_front={["cant add children"]}
-                    title_back={"John Doe"}
-                    text_back={["Architecht", "Programmer"]}
+                    // title_front={"Title"}
+                    text_front={[]}
+                    title_back={"Text back deleted"}
+                    // text_back={["Architecht", "Programmer"]}
+                    text_back={[]}
                 >
-                    <p>Custom Elements here</p>
+                    <p>This is a custom section</p>
                 </FlipCardHover>
             </>
 
@@ -77,15 +50,18 @@ function App() {
             <div className={"mySlider"} id={"slideset-left"}>
                 <div>
                     <h2>first card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
+                        repellendus.</p>
                 </div>
                 <div>
                     <h2>second card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
+                        repellendus.</p>
                 </div>
                 <div>
                     <h2>third card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
+                        repellendus.</p>
                 </div>
 
             </div>

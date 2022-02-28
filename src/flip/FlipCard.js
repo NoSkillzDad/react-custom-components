@@ -16,6 +16,19 @@ const FlipCard = ({   id, title_front, text_front, image_front, altText_front, t
         }
     }
 
+    const renderMe = (property) => {
+        return (property !== undefined && property)
+    }
+
+    const renderText = (textArray) => {
+
+        return (
+            textArray.map(text => (
+                    <p key={text}>{text}</p>
+                ))
+        );
+    }
+
     const cardContent = (image, altText, title, text, button_text, disabled, id, child) => {
 
         if (image) {
@@ -27,10 +40,11 @@ const FlipCard = ({   id, title_front, text_front, image_front, altText_front, t
         } else {
             return (
                 <>
-                    <h2>{title}</h2>
-                    {text.map(function (t) {
-                        return <p>{t}</p>
-                    })}
+                    {renderMe(<h2>{title}</h2>)}
+                    {renderText(text)}
+                    {/*{text.map(function (t) {*/}
+                    {/*    return <p>{t}</p>*/}
+                    {/*})}*/}
                     {child}
                     {incButton(button_text, id, disabled)}
                 </>
