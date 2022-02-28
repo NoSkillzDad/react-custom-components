@@ -5,7 +5,7 @@ import FlipCard from "./FlipCard";
 
 const FlipCardClick = ({   id,
                            title_front, text_front, image_front, altText_front,
-                           title_back, text_back, image_back, altText_back
+                           title_back, text_back, image_back, altText_back, children
                            // button_front_text, button_front_disabled,
                            // button_back_text, button_back_disabled
                        }) => {
@@ -35,7 +35,9 @@ const FlipCardClick = ({   id,
                 altText_front={altText_front}
                 image_back={image_back}
                 altText_back={altText_back}
-            />
+            >
+                {children}
+            </FlipCard>
         </div>
     )
 }

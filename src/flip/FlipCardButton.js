@@ -7,7 +7,7 @@ const FlipCardClick = ({   id,
                            title_front, text_front, image_front, altText_front,
                            title_back, text_back, image_back, altText_back,
                            button_front_text, button_front_disabled,
-                           button_back_text, button_back_disabled
+                           button_back_text, button_back_disabled, children
                        }) => {
 
     const newId = id + ` flip-card-button`;
@@ -29,7 +29,11 @@ const FlipCardClick = ({   id,
                 button_back_text={button_back_text}
                 button_front_disabled={button_front_disabled}
                 button_back_disabled={button_back_disabled}
-            />
+            >
+                {children}
+            </FlipCard>
+
+
         </div>
     )
 }

@@ -4,7 +4,7 @@ import './FlipCardHover.css'
 
 const FlipCardHover = ({   id,
                            title_front, text_front, image_front, altText_front,
-                           title_back, text_back, image_back, altText_back
+                           title_back, text_back, image_back, altText_back, children
                        }) => {
     return (
         <div className="flip-card-hover">
@@ -18,7 +18,9 @@ const FlipCardHover = ({   id,
                 altText_front={altText_front}
                 image_back={image_back}
                 altText_back={altText_back}
-            />
+            >
+               {children}
+            </FlipCard>
         </div>
     )
 }

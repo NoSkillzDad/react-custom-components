@@ -8,6 +8,8 @@ import FlipCardHover from "./flip/FlipCardHover.js";
 import FlipCardClick from "./flip/FlipCardClick.js";
 import FlipCardButton from "./flip/FlipCardButton.js";
 import FlipCard from "./flip/FlipCard";
+import ChildrenTest from "./custom/ChildrenTest";
+import FlipCardTest from "./flip/FlipCardTest";
 
 function App() {
     return (
@@ -60,6 +62,15 @@ function App() {
                     button_back_text={"Flip back"}
                     // button_back_disabled={true}
                 />
+                <FlipCardHover
+                    id={"fc11"}
+                    title_front={"WHY!!!!"}
+                    text_front={["cant add children"]}
+                    title_back={"John Doe"}
+                    text_back={["Architecht", "Programmer"]}
+                >
+                    <p>Custom Elements here</p>
+                </FlipCardHover>
             </>
 
             {/*SlideCards*/}
