@@ -1,7 +1,7 @@
 import React from "react";
 import FButton from "./button/FButton.js";
-import './button/FButton.css'
-import './FlipCard.css';
+import '../lib/components/FButton.css'
+import '../lib/components/FlipCard.css';
 
 const FlipCard = ({   id, title_front, text_front, image_front, altText_front, title_back, text_back, image_back, altText_back, button_front_text, button_front_disabled, button_back_text, button_back_disabled, children}) => {
 

@@ -1,6 +1,6 @@
 import React from "react";
-import './FlipCard.css';
-import './FlipCardButton.css';
+import '../lib/components/FlipCard.css';
+import '../lib/components/FlipCardButton.css';
 import FlipCard from "./FlipCard.js";
 
 const FlipCardClick = ({   id,
