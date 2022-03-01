@@ -1,5 +1,5 @@
 import React from "react";
-import './FButton.css';
+import '../../lib/components/FButton.css';
 
 const FButton = ({ buttonText, disabled, id } ) => {
 

@@ -1,9 +1,5 @@
 import './App.css';
-// import './flip/FlipCard.css';
-import './slide/slide-styles.css';
-import FlipCardHover from "./flip/FlipCardHover.js";
-import FlipCardClick from "./flip/FlipCardClick.js";
-import FlipCardButton from "./flip/FlipCardButton.js";
+import {FlipCardButton, FlipCardHover, FlipCardClick, Slider} from "./lib/components/Flipslip";
 
 function App() {
     return (
@@ -47,24 +43,25 @@ function App() {
             </>
 
             {/*SlideCards*/}
-            <div className={"mySlider"} id={"slideset-left"}>
-                <div>
-                    <h2>first card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
-                        repellendus.</p>
-                </div>
-                <div>
-                    <h2>second card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
-                        repellendus.</p>
-                </div>
-                <div>
-                    <h2>third card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
-                        repellendus.</p>
-                </div>
-
-            </div>
+            <>
+                <Slider id={"slideset-up"}>
+                    <div>
+                        <h2>first card</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
+                            repellendus.</p>
+                    </div>
+                    <div>
+                        <h2>second card</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
+                            repellendus.</p>
+                    </div>
+                    <div>
+                        <h2>third card</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum facere nulla ratione
+                            repellendus.</p>
+                    </div>
+                </Slider>
+            </>
 
         </div>
     );

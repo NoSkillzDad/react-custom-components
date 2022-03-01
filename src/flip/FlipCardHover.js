@@ -1,6 +1,6 @@
 import React from "react";
 import FlipCard from "./FlipCard";
-import './FlipCardHover.css'
+import '../lib/components/FlipCardHover.css'
 
 const FlipCardHover = ({   id,
                            title_front, text_front, image_front, altText_front,
