@@ -13,8 +13,8 @@ const FButton = ({ buttonText, disabled, id } ) => {
     id = "." + id;
 
     function handleClick() {
-        // document.querySelector('.flip-card-button').addEventListener('click', function () {
-        // document.querySelector(`.flip-card-button .flip-card-inner` ).classList.toggle('flipped');
+        // document.querySelector('.flip-orig-card-button').addEventListener('click', function () {
+        // document.querySelector(`.flip-orig-card-button .flip-orig-card-inner` ).classList.toggle('flipped');
         document.querySelector(`${id} .flip-card-inner`).classList.toggle('flipped');
         // });
     }
@@ -99,7 +99,7 @@ export const FlipCardButton = ({   id,
     const newId = id + ` flip-card-button`;
 
     return (
-        // <div className="flip-card-button">
+        // <div className="flip-orig-card-button">
         <div className={newId}>
             <FlipCard
                 id={id}
@@ -137,8 +137,8 @@ export const FlipCardClick = ({   id,
 
         let nId = "." + id;
 
-        // document.querySelector('.flip-card').addEventListener('click', function () {
-        // document.querySelector('.flip-card-click .flip-card-inner').classList.toggle('flipped');
+        // document.querySelector('.flip-orig-card').addEventListener('click', function () {
+        // document.querySelector('.flip-orig-card-click .flip-orig-card-inner').classList.toggle('flipped');
         document.querySelector(`${nId} .flip-card-inner`).classList.toggle('flipped');
         // });
         // console.log(`You flipped me!`)
@@ -188,7 +188,7 @@ export const FlipCardHover = ({   id,
 
 export const Slider = ( {id, children} ) => {
 
-    // const newId = id + ` flip-card-button`;
+    // const newId = id + ` flip-orig-card-button`;
 
     return (
         <div className={"mySlider"} id={id}>
