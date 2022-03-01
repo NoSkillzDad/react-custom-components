@@ -1,9 +1,11 @@
 import './App.css';
 // import './slide/slide-styles.css';
-import FlipCardHover from "./flip/FlipCardHover.js";
-import FlipCardClick from "./flip/FlipCardClick.js";
-import FlipCardButton from "./flip/FlipCardButton.js";
-import Slider from "./slide/Slider";
+// import FlipCardHover from "./flip/FlipCardHover.js";
+// import FlipCardClick from "./flip/FlipCardClick.js";
+// import FlipCardButton from "./flip/FlipCardButton.js";
+// import Slider from "./slide/Slider";
+
+import {FlipCardButton, FlipCardHover, FlipCardClick, Slider} from "./flipslip/Flipslip";
 
 function App() {
     return (
