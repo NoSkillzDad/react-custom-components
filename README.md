@@ -4,7 +4,7 @@
 
 ## Install
 
-`$ npm install @noskillzdad/flipslip`
+`$ npm install flipslip`
 
 ## Use
 
